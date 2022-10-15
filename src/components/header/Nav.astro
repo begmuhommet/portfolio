@@ -1,0 +1,22 @@
+---
+const menu = [
+  { id: 'about', label: 'About' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'expirince', label: 'Experience' },
+  { id: 'contact', label: 'Contact' },
+];
+---
+
+<nav class="hidden md:block">
+  <ul class="flex items-center">
+    {
+      menu.map(item => (
+        <li class="mr-6 last:mr-0">
+          <a href={item.id} class="hover:text-secondary-main transition-colors">
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

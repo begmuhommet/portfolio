@@ -1,0 +1,24 @@
+---
+import Container from '../Container.astro';
+import HamburgerIcon from '../icons/HamburgerIcon.astro';
+import Logo from '../icons/Logo.astro';
+import Nav from './Nav.astro';
+---
+
+<header class="bg-background-main py-4 shadow-lg fixed top-0 left-0 w-full">
+  <Container>
+    <div class="flex items-center justify-between">
+      <Logo />
+
+      <Nav />
+      <button
+        class="px-3 py-1 border border-secondary-main rounded-md text-secondary-main hover:bg-secondary-light transition-colors"
+        >Download CV</button
+      >
+
+      <div class="block md:hidden">
+        <HamburgerIcon />
+      </div>
+    </div>
+  </Container>
+</header>

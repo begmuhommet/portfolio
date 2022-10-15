@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+const { title = 'Jumayev Bega', description = 'The personal site of Bega Jumayev' } = Astro.props;
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" property="og:description" content={description} />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>

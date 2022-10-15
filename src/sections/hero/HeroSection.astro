@@ -1,0 +1,29 @@
+---
+import Container from '../../components/Container.astro';
+import Tecknologies from './Tecknologies.astro';
+---
+
+<div class="pt-28 pb-10 min-h-screen flex items-center">
+  <Container>
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="text-center md:text-left flex-1 mb-20">
+        <p class="text-sm md:text-md text-secondary-main mb-2">Hi, my name is</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl text-slate-100 font-bold mb-2 md:mb-4">Jumayev Bega</h1>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl text-slate-300 font-bold mb-3 md:mb-6">I build Frontend.</h1>
+        <p class="text-md md:text-lg text-gray-400 max-w-sm md:max-w-lg mb-10">
+          I am a result-oriented Frontend Developer with 4+ years in the Web Development space. I focus on code quality and
+          relevant technologies. Additionally, I am a big new technologies fan because of that currently I'm working on
+          Blockchain.
+        </p>
+        <button
+          class="px-4 py-2 border border-secondary-main rounded-md text-secondary-main w-60 hover:bg-secondary-light transition-colors"
+          >Offer project</button
+        >
+      </div>
+
+      <div class="flex-1 h-80 overflow-hidden">
+        <Tecknologies />
+      </div>
+    </div>
+  </Container>
+</div>

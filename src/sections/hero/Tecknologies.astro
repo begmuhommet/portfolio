@@ -1,0 +1,17 @@
+---
+const tecknologies = [
+  { name: 'HTML', left: 'left-0', top: 'top-0' },
+  { name: 'CSS', left: 'left-1/2', top: 'top-0' },
+  { name: 'Javascript', left: 'left-full', top: 'top-0' },
+  { name: 'React', left: 'left-0', top: 'top-1/2' },
+  { name: 'Mobx', left: 'left-0', top: 'top-full' },
+  { name: 'Tailwind', left: 'left-1/2', top: 'top-1/2' },
+  { name: 'Bootstrap', left: 'left-1/2', top: 'top-full' },
+  { name: 'MaterialUI', left: 'left-full', top: 'top-1/2' },
+  { name: 'Figma', left: 'left-full', top: 'top-full' },
+];
+---
+
+<div class="border border-secondary-main relative w-80 h-80 mx-auto rounded-full">
+  {tecknologies.map(({ left, name, top }) => <div class={`absolute ${left} ${top}`}>{name}</div>)}
+</div>
