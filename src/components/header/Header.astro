@@ -1,12 +1,11 @@
 ---
-import Container from '../Container.astro';
 import HamburgerIcon from '../icons/HamburgerIcon.astro';
 import Logo from '../icons/Logo.astro';
 import Nav from './Nav.astro';
 ---
 
-<header class="bg-background-main py-4 shadow-lg fixed top-0 left-0 w-full">
-  <Container>
+<header class="bg-background-main py-4 shadow-lg fixed top-0 left-0 w-full z-20">
+  <div class="container">
     <div class="flex items-center justify-between">
       <Logo />
 
@@ -20,5 +19,5 @@ import Nav from './Nav.astro';
         <HamburgerIcon />
       </div>
     </div>
-  </Container>
+  </div>
 </header>

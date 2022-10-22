@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{astro,html}'],
+  content: ['./src/**/*.{astro,html,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -20,6 +20,21 @@ module.exports = {
           main: '#2B2B2B',
           light: '#3C3F41',
         },
+        custom: {
+          blue: '#644771',
+          green: '#5F8148',
+          white: '#A9B7C6',
+        },
+      },
+    },
+    container: {
+      padding: '2rem',
+      center: true,
+      screens: {
+        sm: '648px',
+        md: '756px',
+        lg: '992px',
+        xl: '1200px',
       },
     },
   },
