@@ -2,10 +2,10 @@
 import Tecknologies from './Tecknologies';
 ---
 
-<div class="pt-28 pb-20 min-h-screen flex items-center">
+<section class="pt-28 pb-20 min-h-screen flex items-center">
   <div class="container">
-    <div class="flex flex-col md:flex-row">
-      <div class="text-center md:text-left flex-1 mb-20">
+    <div class="flex flex-col lg:flex-row lg:justify-start">
+      <div class="text-left flex-1 mb-20">
         <p class="text-sm md:text-md text-secondary-main mb-2">Hi, my name is</p>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl text-slate-100 font-bold mb-2 md:mb-4">Jumayev Bega</h1>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl text-slate-300 font-bold mb-3 md:mb-6">I build Frontend.</h1>
@@ -20,9 +20,9 @@ import Tecknologies from './Tecknologies';
         >
       </div>
 
-      <div class="flex-1 ml-3">
+      <div class="flex-1 ml-0 sm:ml-10 self-start lg:self-auto">
         <Tecknologies client:load />
       </div>
     </div>
   </div>
-</div>
+</section>

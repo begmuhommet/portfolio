@@ -1,31 +1,56 @@
 ---
 import SectionTitle from '../../components/SectionTitle.astro';
+
+const technologies = [
+  'Javascript',
+  'Typescript',
+  'React',
+  'Next.js',
+  'Mobx',
+  'MUI',
+  'TailwindCSS',
+  'Wagmi',
+  'Web3.js',
+  'Ethers.js',
+  'Hook Form',
+  'Chart.js',
+];
 ---
 
-<div class="pb-20">
+<section class="pb-20">
   <div class="container">
     <div class="max-w-4xl mx-auto">
       <SectionTitle title="About me" />
-      <div class="flex">
-        <div>
+      <div class="flex flex-col lg:flex-row">
+        <div class="max-w-2xl mb-5 lg:mb-0">
           <p class="mb-2">
-            I am a result-oriented Frontend Developer with 4+ years in the Web Development space. I focus on code quality and
-            relevant technologies.
+            Hello! My name is <i class="text-primary-main">Bega</i> and I enjoy build frontend. My interest in web development started
+            back in <i class="text-primary-main">2017</i> playing with HTML and CSS. That's when I realized how interesting things
+            <i class="text-primary-main">I can do.</i>
           </p>
-          <p class="mb-2">
-            Technical Skills & Tools: Javascript, Typescript, React, Next, Mobx, Redux, Material UI, Git, VS Code, Figma, Postman,
-            Gitlab, Jira.
+          <p class="mb-4">
+            I’ve had the privilege of working at <i class="text-primary-main">few start-up's</i>, a big <i
+              class="text-primary-main">it company</i
+            >, and as a <i class="text-primary-main">freelancer</i> on freelance platforms. My main focus now is building accessible,
+            inclusive products and digital experiences at <i class="text-primary-main">Ekta</i> for a variety of users.
           </p>
-          <p class="mb-2">
-            Additionally, I am a big new technologies fan. I joined the startup to make applications on the blockchain and we made
-            about 3 web applications on Ethereum.
+          <p class="mb-3">
+            Here are a few <i class="text-primary-main">technologies</i> I’ve been working with <i class="text-primary-main"
+              >recently:</i
+            >
           </p>
-          <p class="mb-2">
-            I get excited about opportunities where I'm able to make great web applications that are visible to the eye.
-          </p>
-          <p class="mb-2">I love connecting with new people, give me a shout at 𝗯𝗲𝗴𝗺𝘂𝗵𝗼𝗺𝗺𝗲𝘁.𝗷𝘂𝗺𝗮𝘆𝗲𝘃@𝗴𝗺𝗮𝗶𝗹.𝗰𝗼𝗺</p>
+          <ul class="grid grid-cols-2 md:grid-cols-3">
+            {
+              technologies.map(tech => (
+                <li class="flex items-center mb-2">
+                  <span class="w-1 h-1 rounded-full bg-secondary-main mr-2" />
+                  <span>{tech}</span>
+                </li>
+              ))
+            }
+          </ul>
         </div>
-        <div class="pl-5">
+        <div class="pl-0 sm:pl-5">
           <div class="relative group w-60 h-60">
             <div
               class="w-60 h-60 rounded-lg overflow-hidden border-4 border-secondary-light group-hover:border-secondary-main transition-all"
@@ -45,4 +70,4 @@ import SectionTitle from '../../components/SectionTitle.astro';
       </div>
     </div>
   </div>
-</div>
+</section>

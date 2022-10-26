@@ -4,13 +4,13 @@ import typingText from '../../data/typingText';
 const Technologies = () => {
   const handleTypewriter = (typewriter: TypewriterClass) => {
     typingText.forEach(text => {
-      typewriter.typeString(text).changeDelay(40).start();
+      typewriter.typeString(text).start();
     });
   };
 
   return (
-    <div className="text-custom-white text-sm">
-      <Typewriter onInit={handleTypewriter} options={{ loop: true, deleteSpeed: 10 }} />
+    <div className="text-custom-white text-sm h-full">
+      <Typewriter onInit={handleTypewriter} options={{ strings: typingText, deleteSpeed: 10, delay: 20 }} />
     </div>
   );
 };

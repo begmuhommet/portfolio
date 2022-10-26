@@ -58,8 +58,8 @@ const typingText = [
 
   `<br />`,
 
-  `<button className`,
-  `<span class="text-custom-green">="font-bold text-white"</span>`,
+  `<`,
+  `<span class="text-secondary-main">button</span>`,
   ` onClick`,
 
   `<span class="text-custom-green">=</span>`,
@@ -69,7 +69,9 @@ const typingText = [
 
   `>`,
   `Connect Wallet`,
-  `</button>`,
+  `</`,
+  `<span class="text-secondary-main">button</span>`,
+  `>`,
 
   `<br />`,
 
