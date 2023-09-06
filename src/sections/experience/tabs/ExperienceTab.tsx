@@ -32,7 +32,7 @@ const ExperienceTab: React.FC = () => {
               <li
                 key={key}
                 className={clsx(liClasses, active === key && activeClasses)}
-                onClick={handleChangeActive(key)}
+                onClick={handleChangeActive(key as TabNames)}
               >
                 {value}
               </li>
