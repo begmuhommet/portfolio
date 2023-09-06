@@ -1,6 +1,6 @@
 import i18n from '@/i18n';
 import { motion } from 'framer-motion';
-import { IoConstructOutline } from 'react-icons/io5';
+import OfferProjectModal from './OfferProjectModal';
 import Technologies from './Technologies';
 
 const HeroSection = () => {
@@ -41,13 +41,7 @@ const HeroSection = () => {
               initial={{ y: 200, opacity: 0 }}
               animate={{ y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.6 } }}
             >
-              <button
-                type="button"
-                className="px-4 py-2 border border-secondary-main rounded-md text-secondary-main w-60 hover:bg-secondary-light transition-colors active:scale-95 flex items-center justify-center"
-              >
-                <IoConstructOutline className="mr-2" size={18} />
-                <span>{i18n.t('offer')}</span>
-              </button>
+              <OfferProjectModal />
             </motion.div>
           </div>
 

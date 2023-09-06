@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Socials = () => {
   return (
-    <ul className="flex items-center justify-center flex-col fixed bottom-6 right-10 z-50 text-white">
+    <ul className="flex items-center justify-center flex-col fixed bottom-6 right-10 z-30 text-white">
       {socials.map(({ icon, href, name }, index) => (
         <motion.li
           key={index}
