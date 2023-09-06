@@ -3,11 +3,11 @@ import { TLang } from '@/types';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-const languages: { [key in TLang]: string } = {
-  tr: '/tr.svg',
-  en: '/en.svg',
-  ru: '/ru.svg',
-};
+import en from '@/assets/en.svg';
+import ru from '@/assets/ru.svg';
+import tr from '@/assets/tr.svg';
+
+const languages: { [key in TLang]: string } = { en, ru, tr };
 
 const Languages = () => {
   // State
