@@ -1,0 +1,58 @@
+export const projects = [
+  {
+    name: 'Blockchain wallet',
+    description: 'Blockchain wallet',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://multi.ekta.io',
+    image: '/projects/wallet.png',
+  },
+  {
+    name: 'Ekta Claim',
+    description: 'Ekta Claim',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/claim.png',
+  },
+  {
+    name: '3D Point Cloud viewer',
+    description: '3D Point Cloud viewer',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/trimetari.png',
+  },
+  {
+    name: 'WEKTA Swap',
+    description: 'WEKTA Swap',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/wekta.png',
+  },
+  {
+    name: 'Endorse',
+    description: 'Endorse',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/endorse.png',
+  },
+  {
+    name: 'Podsolnukh',
+    description: 'Endorse',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/podsolnukh.png',
+  },
+  {
+    name: 'Huzur',
+    description: 'Huzur',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/huzur.png',
+  },
+  {
+    name: 'CS:GO',
+    description: 'CS:GO',
+    tecknologies: ['Typescript', 'React', 'MaterialUI', 'Vite', 'React Hook Form'],
+    url: 'https://www.multi.ekta.io',
+    image: '/projects/fastmm.png',
+  },
+];
