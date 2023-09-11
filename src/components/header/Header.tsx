@@ -4,6 +4,12 @@ import { IoDocumentTextOutline } from 'react-icons/io5';
 import Languages from '../Languages';
 import Logo from '../Logo';
 
+const resumes: { [key: string]: string } = {
+  en: '/Begmuhommet-Jumayev.pdf',
+  ru: 'Жумаев-Бегмухоммет.pdf',
+  tr: '/Begmuhommet-Jumayev-TR.pdf',
+};
+
 const Header = () => {
   // Renders
   return (
@@ -17,7 +23,7 @@ const Header = () => {
           <div className="flex items-center justify-end relative gap-4">
             <motion.div initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}>
               <a
-                href="/Jumayev Begmuhommet Resume.pdf"
+                href={resumes[i18n.language]}
                 target="_blank"
                 className="px-3 py-1 border border-secondary-main rounded-md text-secondary-main hover:bg-secondary-light transition-colors active:scale-95 flex items-center justify-center"
               >

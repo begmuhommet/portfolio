@@ -1,15 +1,16 @@
 {
   "resume": "Резюме",
-  "hi": "Hi, my name is",
-  "name": "Jumayev Begmuhommet",
-  "subtitle": "I build Frontend.",
-  "description": "I'm a frontend developer with 5+ years of experience, specializing in creating dynamic web experiences using React.js, Next.js, and TypeScript.",
-  "offer": "Offer project",
-  "about": "About me",
-  "aboutText": "Hello! My name is Bega and I enjoy build frontend. My interest in web development started back in 2017 playing with HTML and CSS. That's when I realized how interesting thingsI can do.  I’ve had the privilege of working at few start-up's, a big it company, and as a freelancer on freelance platforms. My main focus now is building accessible, inclusive products and digital experiences at Ekta for a variety of users.",
-  "experience": "Experience",
-  "projects": "Recent projects",
-  "designed": "Designed",
-  "built": "Built",
-  "by": "by"
+  "hi": "Привет, меня зовут",
+  "name": "Жумаев Бегмухоммет",
+  "subtitle": "Я создаю фронтенд.",
+  "description": "Я фронтенд-разработчик с более чем 4.5 летним опытом работы, специализирующийся на создании динамических веб-приложений с использованием React.js, Next.js и TypeScript.",
+  "offer": "Предложить проект",
+  "about": "Обо мне",
+  "aboutText": "Я ориентированный на результат фронтенд-разработчик с 4.5 летним опытом работы в сфере веб-разработки. Я фокусируюсь на качестве кода, актуальных технологиях и результатах. С 2018 года работал как и фрилансером так и в нескольких компаниях. Имею опыт работы в команде и индивидуально. Могу управлять как своими задачами и графиком так и задачами команды. Был опыт наставничества с новыми разработчиками.",
+  "technologies": "Технологии",
+  "experience": "Опыт",
+  "projects": "Недавние проекты",
+  "designed": "Дизайн",
+  "built": "Разработка",
+  "by": "от"
 }
