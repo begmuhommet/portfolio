@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: 16,
+      },
       colors: {
         primary: {
           main: '#CB7731',
@@ -37,5 +41,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};

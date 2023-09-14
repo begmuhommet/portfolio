@@ -43,9 +43,7 @@ const AboutSection = () => {
   return (
     <section ref={sectionRef} className="pb-20">
       <div className="container px-2 mx-auto">
-        <motion.div style={{ x }}>
-          <SectionTitle title={i18n.t('about')} />
-        </motion.div>
+        <SectionTitle title={i18n.t('about')} />
         <div className="flex flex-col lg:flex-row">
           <div className="max-w-2xl mb-5 lg:mb-0">
             <motion.p
