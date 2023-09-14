@@ -1,7 +1,6 @@
 import SectionTitle from '@/components/SectionTitle';
 import i18n from '@/i18n';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const technologies = [
   'Javascript',
@@ -19,11 +18,6 @@ const technologies = [
 ];
 
 const AboutSection = () => {
-  const sectionRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start end', 'end start'] });
-  const x = useTransform(scrollYProgress, [0, 1], [-100, 70]);
-
   // Renders
   const renderTech = () => {
     return technologies.map((tech, index) => (
@@ -41,7 +35,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section ref={sectionRef} className="pb-20">
+    <section className="pb-20">
       <div className="container px-2 mx-auto">
         <SectionTitle title={i18n.t('about')} />
         <div className="flex flex-col lg:flex-row">

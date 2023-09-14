@@ -23,21 +23,23 @@ const ExperienceTab: React.FC = () => {
   };
 
   // Renders
+  const renderTabs = () => {
+    return Object.entries(TabNames)?.map(([key, value]) => (
+      <li
+        key={key}
+        className={clsx(liClasses, active === key && activeClasses)}
+        onClick={handleChangeActive(key as TabNames)}
+      >
+        {value}
+      </li>
+    ));
+  };
+
   return (
     <div className="flex max-w-3xl">
       <div className="mr-3">
         <nav>
-          <ul>
-            {Object.entries(TabNames)?.map(([key, value]) => (
-              <li
-                key={key}
-                className={clsx(liClasses, active === key && activeClasses)}
-                onClick={handleChangeActive(key as TabNames)}
-              >
-                {value}
-              </li>
-            ))}
-          </ul>
+          <ul>{renderTabs()}</ul>
         </nav>
       </div>
 
@@ -50,15 +52,7 @@ const ExperienceTab: React.FC = () => {
             exit={{ x: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <TabContent
-              companyName={experience[active]?.name}
-              companyUrl={experience[active]?.website}
-              title={experience[active]?.title}
-              workStartDate={experience[active]?.startDate}
-              workFinishDate={experience[active]?.endDate}
-              workList={experience[active]?.tasks}
-              subtitle="(Web3)"
-            />
+            <TabContent data={experience[active]} />
           </motion.div>
         </AnimatePresence>
       </div>

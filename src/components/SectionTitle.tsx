@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { FC } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { FC, useRef } from 'react';
 
 interface IProps {
   title: string;
@@ -7,12 +7,15 @@ interface IProps {
 
 const SectionTitle: FC<IProps> = props => {
   const { title } = props;
+  const ref = useRef(null);
+  const inView = useInView({ current: ref.current });
 
   return (
     <motion.h2
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ once: true }}
+      ref={ref}
+      variants={{ hide: { opacity: 0 }, show: { opacity: 1 } }}
+      animate={inView ? 'show' : 'hide'}
+      transition={{ duration: 0.7 }}
       className="text-3xl text-secondary-main font-bold mb-5 lg:mb-12"
     >
       {title}

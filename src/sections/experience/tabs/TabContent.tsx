@@ -1,39 +1,36 @@
+import { IExperience } from '@/types';
+
 interface ITabContentProps {
-  title: string;
-  subtitle?: string;
-  workStartDate: string;
-  workFinishDate: string;
-  companyName: string;
-  companyUrl: string;
-  workList: string[];
+  data: IExperience;
 }
 
 const TabContent: React.FC<ITabContentProps> = props => {
-  const { workStartDate, workFinishDate, companyName, companyUrl, title, workList, subtitle } = props;
+  const { data } = props;
+  const { name, title, subtitle, website, start, end, tasks } = data;
 
   return (
     <div>
       <div className="flex items-center">
-        <h6 className="font-bold mr-1">{title}</h6>
+        <h6 className="font-bold mr-3 text-xl">{title}</h6>
         {subtitle && <span className="mr-2 text-sm">{subtitle}</span>}
         <a
-          href={companyUrl}
-          className="text-secondary-main hover:text-primary-main transition-colors"
+          href={website}
+          className="text-secondary-main hover:text-primary-main transition-colors text-lg"
           target="_blank"
           rel="nooper noreferrer"
         >
-          @{companyName}
+          @{name}
         </a>
       </div>
-      <p className="text-sm text-slate-300 mb-2">
-        {workStartDate} &#8212; {workFinishDate}
+      <p className="text-sm text-slate-300 mb-2 text-lg">
+        {start} &#8212; {end}
       </p>
 
       <ul>
-        {workList?.map((work, index) => (
-          <li key={index} className="flex items-center mb-1">
+        {tasks?.map((work, index) => (
+          <li key={index} className="flex items-center mb-1 text-md">
             <span className="w-1 h-1 rounded-full bg-secondary-main mr-2" />
-            <span className="text-sm text-stone-100">{work}</span>
+            <span className="text-stone-100">{work}</span>
           </li>
         ))}
       </ul>
