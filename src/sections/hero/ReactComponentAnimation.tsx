@@ -1,7 +1,7 @@
 import typingText from '@/data/typingText';
 import Typewriter, { TypewriterClass } from 'typewriter-effect';
 
-const Technologies = () => {
+const ReactComponentAnimation = () => {
   const handleTypewriter = (typewriter: TypewriterClass) => {
     typingText.forEach(text => {
       typewriter.typeString(text).start();
@@ -22,4 +22,4 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;
+export default ReactComponentAnimation;

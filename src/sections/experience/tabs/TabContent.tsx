@@ -10,7 +10,7 @@ const TabContent: React.FC<ITabContentProps> = props => {
 
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex md:items-center flex-col md:flex-row">
         <h6 className="font-bold mr-3 text-xl">{title}</h6>
         {subtitle && <span className="mr-2 text-sm">{subtitle}</span>}
         <a

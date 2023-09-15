@@ -1,14 +1,14 @@
 import i18n from '@/i18n';
 import { motion } from 'framer-motion';
 import OfferProjectModal from './OfferProjectModal';
-import Technologies from './Technologies';
+import ReactComponentAnimation from '@/sections/hero/ReactComponentAnimation';
 
 const HeroSection = () => {
   return (
     <section id="hero" className="py-48 flex items-center justify-center">
       <div className="container px-3 mx-auto">
         <div className="flex flex-col lg:flex-row lg:justify-start">
-          <div className="text-left flex-1 mb-20">
+          <div className="text-left flex-1 mb-10 lg:mb-20">
             <motion.p
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.4 } }}
@@ -45,8 +45,8 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          <div className="flex-1 ml-0 sm:ml-10 self-start lg:self-auto">
-            <Technologies />
+          <div className="flex-1 ml-0 sm:ml-10 self-start lg:self-auto hidden lg:flex">
+            <ReactComponentAnimation />
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import TabContent from './TabContent';
 
 const liClasses =
-  'px-4 py-2 border-l-2 border-gray-200 hover:bg-secondary-light cursor-pointer mr-5 transition-all duration-600';
+  'flex-1 px-4 py-2 md:border-l-2 border-b-2 md:border-b-0 border-gray-200 hover:bg-secondary-light cursor-pointer mr-5 transition-all duration-600';
 const activeClasses = 'border-primary-main text-primary-main bg-secondary-light';
 
 export enum TabNames {
@@ -36,10 +36,10 @@ const ExperienceTab: React.FC = () => {
   };
 
   return (
-    <div className="flex max-w-3xl">
-      <div className="mr-3">
+    <div className="flex flex-col md:flex-row max-w-3xl">
+      <div className="mb-5 md:mb-0 md:mr-3">
         <nav>
-          <ul>{renderTabs()}</ul>
+          <ul className="flex md:flex-col flex-row">{renderTabs()}</ul>
         </nav>
       </div>
 

@@ -62,7 +62,7 @@ const AboutSection = () => {
                   />
                 </div>
               </div>
-              <div className="w-full h-full rounded-lg border-4 opacity-1 z-20 border-secondary-main absolute top-5 left-10 transition-all group-hover:opacity-0 group-hover:-translate-x-10 group-hover:-translate-y-10 bg-secondary-main opacity-50 duration-500" />
+              <div className="hidden md:block w-full h-full rounded-lg border-4 opacity-1 z-20 border-secondary-main absolute top-5 left-10 transition-all group-hover:opacity-0 group-hover:-translate-x-10 group-hover:-translate-y-10 bg-secondary-main opacity-50 duration-500" />
             </div>
           </div>
         </div>

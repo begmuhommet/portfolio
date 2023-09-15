@@ -12,5 +12,8 @@
   "projects": "Recent projects",
   "designed": "Designed",
   "built": "Built",
-  "by": "by"
+  "by": "by",
+  "exp": {
+    "ekta": {}
+  }
 }
