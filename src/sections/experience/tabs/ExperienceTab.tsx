@@ -1,4 +1,4 @@
-import { experience } from '@/data/experience';
+import useExperience from '@/hooks/useExperience';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
@@ -16,6 +16,7 @@ export enum TabNames {
 
 const ExperienceTab: React.FC = () => {
   const [active, setActive] = useState<TabNames>(TabNames.EktaChain);
+  const experience = useExperience();
 
   // Handlers
   const handleChangeActive = (tab: TabNames) => () => {
