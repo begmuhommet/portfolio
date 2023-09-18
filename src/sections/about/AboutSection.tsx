@@ -37,7 +37,7 @@ const AboutSection = () => {
   return (
     <section className="pb-20">
       <div className="container px-2 mx-auto">
-        <SectionTitle title={i18n.t('about')} />
+        <SectionTitle title={i18n.t('aboutTitle')} />
         <div className="flex flex-col lg:flex-row">
           <div className="max-w-2xl mb-5 lg:mb-0">
             <motion.p
@@ -46,7 +46,7 @@ const AboutSection = () => {
               viewport={{ once: true }}
               className="mb-6"
             >
-              {i18n.t('aboutText')}
+              {i18n.t('aboutContent')}
             </motion.p>
             <p className="mb-3 text-primary-main">{i18n.t('technologies')}:</p>
             <ul className="grid grid-cols-2 md:grid-cols-3">{renderTech()}</ul>

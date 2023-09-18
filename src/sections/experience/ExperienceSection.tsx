@@ -1,4 +1,5 @@
 import SectionTitle from '@/components/SectionTitle';
+import i18n from '@/i18n';
 import ExperienceTab from '@/sections/experience/tabs/ExperienceTab';
 
 const ExperienceSection = () => {
@@ -6,7 +7,7 @@ const ExperienceSection = () => {
   return (
     <section className="py-20">
       <div className="container px-2 mx-auto">
-        <SectionTitle title="Experience" />
+        <SectionTitle title={i18n.t('experienceTitle')} />
         <ExperienceTab />
       </div>
     </section>
