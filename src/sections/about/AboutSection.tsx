@@ -58,7 +58,7 @@ const AboutSection = () => {
                   <img
                     src="/bega.png"
                     alt="Jumayev Begmuhommet"
-                    className="grayscale group-hover:grayscale-0 transition-all"
+                    className="grayscale group-hover:grayscale-0 transition-all max-w-none"
                   />
                 </div>
               </div>

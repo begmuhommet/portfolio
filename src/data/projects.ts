@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: 'Portfolio Achuta',
+    description: 'Portfolio Achuta Anekal',
+    tecknologies: ['Typescript', 'React', 'Vite', 'TailwindCSS'],
+    url: 'https://www.achutaanekal.com/',
+    image: '/projects/portfolio-achuta.png',
+  },
+  {
     name: 'Blockchain wallet',
     description: 'Blockchain wallet',
     tecknologies: [
