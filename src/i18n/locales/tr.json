@@ -5,11 +5,49 @@
   "subtitle": "Frontend gelistiririm.",
   "description": "React.js, Next.js ve TypeScript'i kullanarak dinamik web uygulama oluşturma konusunda uzmanlaşmış, 5 yıldan fazla deneyime sahip bir frontend geliştiricisiyim.",
   "offer": "Proje teklif et",
-  "about": "Hakkimda",
-  "aboutText": "Merhaba! Adım Bega ve ön uç oluşturmayı seviyorum. Web geliştirmeye olan ilgim 2017 yılında HTML ve CSS ile oynayarak başladı. İşte o zaman ne kadar ilginç şeyler yapabileceğimi fark ettim. Birkaç start-up'ta, büyük bir bilişim şirketinde ve serbest platformlarda serbest çalışan olarak çalışma ayrıcalığına sahip oldum. Şu anki asıl odak noktam Ekta'da çeşitli kullanıcılar için erişilebilir, kapsayıcı ürünler ve dijital deneyimler oluşturmak.",
-  "experience": "Deneyim",
-  "projects": "Son projeler",
+  "aboutTitle": "Hakkimda",
+  "aboutContent": "Merhaba! Adım Bega ve ön uç oluşturmayı seviyorum. Web geliştirmeye olan ilgim 2017 yılında HTML ve CSS ile oynayarak başladı. İşte o zaman ne kadar ilginç şeyler yapabileceğimi fark ettim. Birkaç start-up'ta, büyük bir bilişim şirketinde ve serbest platformlarda serbest çalışan olarak çalışma ayrıcalığına sahip oldum. Şu anki asıl odak noktam Ekta'da çeşitli kullanıcılar için erişilebilir, kapsayıcı ürünler ve dijital deneyimler oluşturmak.",
+  "experienceTitle": "Deneyim",
+  "projectsTitle": "Son projeler",
   "designed": "Tasarim",
   "built": "Gelisterme",
-  "by": "tarafindan"
+  "by": "tarafindan",
+  "experience": {
+    "ekta": {
+      "title": "Frontend developer",
+      "company": "EktaChain",
+      "start": "06.2022",
+      "end": "Hala çalışıyorum",
+      "tasks": [
+        "Ekiple iletişim: proje yöneticisi, backend ve blockchain geliştiricileri.",
+        "Blockchain web uygulamalarının tasarımı ve geliştirilmesi.",
+        "Backend ve blockchain geliştiricilerinin kod incelemesi.",
+        "Geliştirilen uygulamalar için destek."
+      ]
+    },
+    "neti": {
+      "title": "Frontend developer",
+      "company": "i-neti",
+      "start": "08.2021",
+      "end": "06.2022",
+      "tasks": [
+        "Ekiple iletişim: proje yöneticisi, backend developer ve tasarımcılar.",
+        "Web uygulamalarının geliştirilmesi ve desteklenmesi.",
+        "Diğer frontend developerlerin kodlarının incelenmesi.",
+        "Yeni geliştiricilere mentorluk yapmak."
+      ]
+    },
+    "freelance": {
+      "company": "Freelance",
+      "title": "Frontend developer",
+      "start": "11.2018",
+      "end": "08.2021",
+      "tasks": [
+        "Freelance platformda proje aramak.",
+        "Müşterilerle iletişim.",
+        "Proje değerlendirmesi.",
+        "Web uygulaması geliştirme."
+      ]
+    }
+  }
 }
